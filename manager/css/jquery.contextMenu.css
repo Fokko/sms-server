@@ -1,0 +1,82 @@
+/* Generic context menu styles */
+.contextMenu {
+	position: absolute;
+	width: 190px;
+	z-index: 99999;
+	border: solid 1px #CCC;
+	background: #EEE;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+
+.contextMenu LI {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contextMenu A {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	background-position: 6px center;
+	background-repeat: no-repeat;
+	outline: none;
+	padding: 1px 5px;
+	padding-left: 28px;
+}
+
+.contextMenu LI.hover A {
+	color: #FFF;
+	background-color: #3399FF;
+}
+
+.contextMenu LI.disabled A {
+	color: #AAA;
+	cursor: default;
+}
+
+.contextMenu LI.hover.disabled A {
+	background-color: transparent;
+}
+
+.contextMenu LI.separator {
+	border-top: solid 1px #CCC;
+}
+
+
+/*
+	adding Icons
+
+	You can add icons to the context menu by adding
+	classes to the respective li element(s)
+*/
+
+.contextMenu li.flip_horizontaal a { background-image: url({ROOTURL}/images/flipH.gif); }
+.contextMenu li.flip_verticaal a { background-image: url({ROOTURL}/images/flipV.gif); }
+.contextMenu li.rotate_left a { background-image: url({ROOTURL}/images/rotate_left.gif); }
+.contextMenu li.rotate_right a { background-image: url({ROOTURL}/images/rotate_right.gif); }
+
+.contextMenu li.productVerwijderen       a { background-image: url( ../images/icons16x16/database_delete.png ); }
+.contextMenu li.folderAanmaken           a { background-image: url( ../images/icons16x16/folder_add.png ); }
+.contextMenu li.productAanmaken          a { background-image: url( ../images/icons16x16/page_add.png ); }
+.contextMenu li.productClonen            a { background-image: url( ../images/icons16x16/page_copy.png ); }
+.contextMenu li.productVariatieAanmaken  a { background-image: url( ../images/icons16x16/page_white_add.png ); }
+.contextMenu li.productVerplaatsenOmhoog a { background-image: url( ../images/icons16x16/arrow_up.png ); }
+.contextMenu li.productVerplaatsenOmlaag a { background-image: url( ../images/icons16x16/arrow_down.png ); }
+.contextMenu li.productVerplaatsenLinks  a { background-image: url( ../images/icons16x16/arrow_left.png ); }
+.contextMenu li.productVerplaatsenRechts a { background-image: url( ../images/icons16x16/arrow_right.png ); }
+
+.contextMenu li.optionSetAanmaken       a { background-image: url( ../images/icons16x16/table_multiple.png ); }
+.contextMenu li.optionAanmaken          a { background-image: url( ../images/icons16x16/table.png ); }
+.contextMenu li.optionVerwijderen       a { background-image: url( ../images/icons16x16/table_delete.png ); }
+
+input, textarea
+{
+	border: solid 1px gray;
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 120%;
+}
